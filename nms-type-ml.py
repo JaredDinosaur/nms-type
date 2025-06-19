@@ -15,6 +15,7 @@ for x in file.readlines():
         file2.write(x)
         os.system("cat nms2.tmp | nms -a")
         os.system("rm nms2.tmp")
+        os.system("echo > nms2.tmp")
     else:
         file2=open("nms2.tmp","a")
         file2.write(x)
