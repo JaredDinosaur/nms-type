@@ -7,13 +7,14 @@ file=open("nms.tmp","r")
 linecount=0
 for x in file.readlines():
     linecount=linecount+1
-    if linecount % maxlc == 1:
+    if linecount == 1:
         file2=open("nms2.tmp","w")
         file2.write(x)
     elif linecount % maxlc == 0: 
         file2=open("nms2.tmp","a")
         file2.write(x)
         os.system("cat nms2.tmp | nms -a")
+        os.system("rm nms2.tmp")
     else:
         file2=open("nms2.tmp","a")
         file2.write(x)
