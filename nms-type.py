@@ -1,6 +1,7 @@
 import os
 command=input("Enter a command: ")
 os.system(command + " > nms.tmp")
+os.system("clear")
 file=open("nms.tmp","r")
 for x in file.readlines():
     file2=open("nms2.tmp","w")
