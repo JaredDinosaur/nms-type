@@ -5,6 +5,7 @@ file=open("nms.tmp","r")
 for x in file.readlines():
     file2=open("nms2.tmp","w")
     file2.write(x)
+    os.system("nano nms2.tmp")
     os.system("cat nms2.tmp | nms -a")
     file2.close()
 file.close()
