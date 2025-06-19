@@ -1,5 +1,5 @@
 import os
-maxlc=input("Enter the number of lines to show at a time: ")
+maxlc=int(input("Enter the number of lines to show at a time: "))
 command=input("Enter a command: ")
 os.system(command + " > nms.tmp")
 os.system("clear")
