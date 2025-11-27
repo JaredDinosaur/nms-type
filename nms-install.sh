@@ -7,7 +7,7 @@ read
 clear
 echo Checking if yay is installed...
 yay -h > check.yay
-if [ `cat check.yay` == "" ]; then
+if [ "`cat check.yay`" == "" ]; then
     echo yay not found. Using standard installation methods...
     sleep 2
     git clone https://github.com/bartobri/no-more-secrets.git
